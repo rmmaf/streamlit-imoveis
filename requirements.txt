@@ -2,3 +2,5 @@ plotly
 pandas
 numpy
 streamlit
+sklearn
+xgboost
