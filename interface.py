@@ -24,7 +24,7 @@ def convert_excel(df):
     return df.to_excel(index=False)
 
 def get_lat_long(endereco):
-    API_KEY = 'AIzaSyAR5KHRssj6lDpqAyLxxDj3greUxXMJlMo='
+    API_KEY = st.secrets['api_key']  # Google Maps API Key
     country = 'BR'          # country code for Brazil
     address = f'{endereco},+{country}'
 
